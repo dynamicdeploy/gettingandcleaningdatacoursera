@@ -3,8 +3,8 @@
 This document describes the code inside `run_analysis.R`.
 
 ##Package Dependencies
-httpr
-plyr
+* httpr
+* plyr
 
 run_analysis.R consists of the following sections:
 
