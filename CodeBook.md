@@ -1,12 +1,12 @@
 # Code Book
 
-This document describes the code inside `run_analysis.R`.
+This document describes the code inside 'run_analysis.R'.
 
 ##Package Dependencies
 * httr
 * plyr
 
-run_analysis.R consists of the following sections:
+'run_analysis.R' consists of the following sections:
 
 * Global Variables
 * Helper Functions
