@@ -80,7 +80,7 @@ getdataframe <- function (inputfilepath,cols = NULL){
 	}
 	return(df)
 }
-#Common function to data any data frame as a CSV file
+#Common function to save any data frame as a CSV file
 saveoutput <- function (x,filename_to_save){
   filename_to_save <- paste(outputfolder, "/", filename_to_save,".csv" ,sep="")
   print(paste("Saving file ", filename_to_save))
@@ -88,7 +88,7 @@ saveoutput <- function (x,filename_to_save){
   print(paste("Saved file ", filename_to_save))
 }
 
-#Build data frames from test and train samples and bind into 
+#Build data frames from test and train samples and binds them into 
 #a single data frame.
 #The test and train datasets are in the format
 #/[test or train]/subject_[test or train].txt
@@ -143,6 +143,7 @@ createtidydsandsave<-function(dx){
   print("Saving tidy dataset")
   saveoutput(tidyds,"tidyds")
   print("Saved tidy dataset")
+  return(tidyds)
 }
 #Finally, create a tidy dataset
-createtidydsandsave(avgstdev)
+tidyds<-createtidydsandsave(avgstdev)
