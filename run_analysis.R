@@ -147,3 +147,4 @@ createtidydsandsave<-function(dx){
 }
 #Finally, create a tidy dataset
 tidyds<-createtidydsandsave(avgstdev)
+write.table(tidyds, file=paste(outputfolder, "tidyds.txt", sep = "/"), row.names = FALSE)
